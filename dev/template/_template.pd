@@ -1,0 +1,17 @@
+#N canvas 237 89 479 315 10;
+#X obj 35 102 dac~;
+#X obj 138 -112 vsl 15 50 0 1 0 0 empty empty A 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 215 -115 vsl 15 50 0 1 0 0 empty empty B 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 124 -53 r Channel-A;
+#X obj 305 -117 vsl 15 50 0 1 0 0 empty empty C 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 381 -116 vsl 15 50 0 1 0 0 empty empty D 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 363 -53 r Channel-D;
+#X obj 284 -53 r Channel-C;
+#X obj 197 -53 r Channel-B;
+#X obj 35 -49 adc~;
+#X connect 9 0 0 0;
+#X connect 9 1 0 1;
