@@ -1,0 +1,45 @@
+#N canvas 237 89 792 327 10;
+#X obj 35 102 dac~;
+#X obj 35 -49 adc~;
+#X obj 120 -97 vsl 15 50 0 1 0 0 empty empty A 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 193 -97 vsl 15 50 0 1 0 0 empty empty B 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 120 -12 r Channel-A;
+#X obj 267 -96 vsl 15 50 0 1 0 0 empty empty C 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 341 -95 vsl 15 50 0 1 0 0 empty empty D 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 341 -11 r Channel-D;
+#X obj 267 -12 r Channel-C;
+#X obj 193 -12 r Channel-B;
+#X obj 120 -38 s Channel-A;
+#X obj 193 -38 s Channel-B;
+#X obj 267 -38 s Channel-C;
+#X obj 341 -37 s Channel-D;
+#X obj 415 -11 r Channel-E;
+#X obj 414 -96 vsl 15 50 0 1 0 0 empty empty E 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 487 -96 vsl 15 50 0 1 0 0 empty empty F 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 561 -95 vsl 15 50 0 1 0 0 empty empty G 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 635 -94 vsl 15 50 0 1 0 0 empty empty H 0 -9 0 10 -262130 -1
+-1 0 1;
+#X obj 414 -37 s Channel-E;
+#X obj 487 -37 s Channel-F;
+#X obj 561 -37 s Channel-G;
+#X obj 635 -36 s Channel-H;
+#X obj 562 -11 r Channel-G;
+#X obj 488 -11 r Channel-F;
+#X obj 636 -11 r Channel-H;
+#X connect 1 0 0 0;
+#X connect 1 1 0 1;
+#X connect 2 0 10 0;
+#X connect 3 0 11 0;
+#X connect 5 0 12 0;
+#X connect 6 0 13 0;
+#X connect 15 0 19 0;
+#X connect 16 0 20 0;
+#X connect 17 0 21 0;
+#X connect 18 0 22 0;
